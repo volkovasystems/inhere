@@ -1,0 +1,36 @@
+{
+  "name": "inhere",
+  "version": "0.0.0",
+  "description": "Traceable inheritance.",
+  "main": "inhere.deploy.js",
+  "support": "inhere.support.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "traceable",
+    "inheritance",
+    "inhere"
+  ],
+  "homepage": "https://github.com/volkovasystems/inhere",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "budge": "^0.26.0",
+    "doubt": "^0.26.0",
+    "een": "^0.18.0",
+    "enyof": "^0.5.0",
+    "eqe": "^0.2.0",
+    "falzy": "^0.19.0",
+    "idntfy": "^0.0.0",
+    "leveld": "^0.3.0",
+    "protype": "^0.21.0",
+    "wauker": "^0.13.0"
+  }
+}
