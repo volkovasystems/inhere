@@ -56,6 +56,7 @@
 			"enyof": "enyof",
 			"eqe": "eqe",
 			"falzy": "falzy",
+			"fname": "fname",
 			"idntfy": "idntfy",
 			"leveld": "leveld",
 			"protype": "protype",
@@ -70,6 +71,7 @@ const een = require( "een" );
 const enyof = require( "enyof" );
 const eqe = require( "eqe" );
 const falzy = require( "falzy" );
+const fname = require( "fname" );
 const idntfy = require( "idntfy" );
 const leveld = require( "leveld" );
 const protype = require( "protype" );
@@ -122,7 +124,8 @@ const inhere = function inhere( blueprint, condition ){
 
 						return wauker( instance )
 							.some( ( constructor ) => {
-								return ( idntfy( constructor, self ) || eqe( constructor, self ) );
+								return ( idntfy( constructor, self ) || eqe( constructor, self ) ||
+								 	fname( constructor ) == fname( self ) );
 							} );
 					};
 				}

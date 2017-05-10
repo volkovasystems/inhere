@@ -56,6 +56,7 @@
               			"enyof": "enyof",
               			"eqe": "eqe",
               			"falzy": "falzy",
+              			"fname": "fname",
               			"idntfy": "idntfy",
               			"leveld": "leveld",
               			"protype": "protype",
@@ -70,6 +71,7 @@ var een = require("een");
 var enyof = require("enyof");
 var eqe = require("eqe");
 var falzy = require("falzy");
+var fname = require("fname");
 var idntfy = require("idntfy");
 var leveld = require("leveld");
 var protype = require("protype");
@@ -122,7 +124,8 @@ var inhere = function inhere(blueprint, condition) {
 
 							return wauker(instance).
 							some(function (constructor) {
-								return idntfy(constructor, self) || eqe(constructor, self);
+								return idntfy(constructor, self) || eqe(constructor, self) ||
+								fname(constructor) == fname(self);
 							});
 						};
 					} }, { key:

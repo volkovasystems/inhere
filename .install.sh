@@ -6,6 +6,7 @@ een \
 enyof \
 eqe \
 falzy \
+fname \
 idntfy \
 leveld \
 protype \
@@ -26,6 +27,7 @@ een \
 enyof \
 eqe \
 falzy \
+fname \
 idntfy \
 leveld \
 protype \
