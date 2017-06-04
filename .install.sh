@@ -1,6 +1,5 @@
 yarn add \
 babel-runtime \
-budge \
 doubt \
 een \
 enyof \
@@ -10,6 +9,7 @@ fname \
 idntfy \
 leveld \
 protype \
+shft \
 wauker \
 --save && \
 yarn add \
@@ -21,7 +21,6 @@ source-map-loader \
 webpack \
 --dev && \
 bower install \
-budge \
 doubt \
 een \
 enyof \
@@ -31,6 +30,7 @@ fname \
 idntfy \
 leveld \
 protype \
+shft \
 wauker \
 --save \
 --force-latest

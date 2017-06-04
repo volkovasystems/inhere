@@ -1,6 +1,6 @@
 {
   "name": "inhere",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Traceable inheritance.",
   "main": "inhere.deploy.js",
   "support": "inhere.support.js",
@@ -23,16 +23,16 @@
     "tests"
   ],
   "dependencies": {
-    "budge": "^0.28.0",
     "doubt": "^0.26.0",
     "een": "^0.18.0",
-    "enyof": "^0.6.0",
+    "enyof": "^0.7.0",
     "eqe": "^0.2.0",
     "falzy": "^0.19.0",
     "fname": "^0.8.0",
     "idntfy": "^0.0.0",
     "leveld": "^0.4.0",
     "protype": "^0.21.0",
+    "shft": "^0.1.0",
     "wauker": "^0.14.0"
   }
 }
