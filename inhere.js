@@ -50,7 +50,6 @@
 
 	@include:
 		{
-			"budge": "budge",
 			"doubt": "doubt",
 			"een": "een",
 			"enyof": "enyof",
@@ -60,12 +59,12 @@
 			"idntfy": "idntfy",
 			"leveld": "leveld",
 			"protype": "protype",
+			"shft": "shft",
 			"wauker": "wauker"
 		}
 	@end-include
 */
 
-const budge = require( "budge" );
 const doubt = require( "doubt" );
 const een = require( "een" );
 const enyof = require( "enyof" );
@@ -75,6 +74,7 @@ const fname = require( "fname" );
 const idntfy = require( "idntfy" );
 const leveld = require( "leveld" );
 const protype = require( "protype" );
+const shft = require( "shft" );
 const wauker = require( "wauker" );
 
 const CONDITION_PROCEDURE_PATTERN = /^[Ss]ymbol\([\-A-Za-z0-9]+\-instance\-condition\)$/;
@@ -173,7 +173,7 @@ const inhere = function inhere( blueprint, condition ){
 			}
 		} );
 
-		condition = leveld( budge( arguments ) )
+		condition = leveld( shft( arguments ) )
 			.filter( ( condition ) => protype( condition, FUNCTION ) );
 
 		blueprint[ INSTANCE_CONDITION ]( condition );
