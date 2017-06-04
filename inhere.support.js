@@ -50,7 +50,6 @@
               
               	@include:
               		{
-              			"budge": "budge",
               			"doubt": "doubt",
               			"een": "een",
               			"enyof": "enyof",
@@ -60,12 +59,12 @@
               			"idntfy": "idntfy",
               			"leveld": "leveld",
               			"protype": "protype",
+              			"shft": "shft",
               			"wauker": "wauker"
               		}
               	@end-include
               */var _getOwnPropertyDescriptor = require("babel-runtime/core-js/object/get-own-property-descriptor");var _getOwnPropertyDescriptor2 = _interopRequireDefault(_getOwnPropertyDescriptor);var _defineProperty = require("babel-runtime/core-js/object/define-property");var _defineProperty2 = _interopRequireDefault(_defineProperty);var _classCallCheck2 = require("babel-runtime/helpers/classCallCheck");var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);var _createClass2 = require("babel-runtime/helpers/createClass");var _createClass3 = _interopRequireDefault(_createClass2);var _getOwnPropertySymbols = require("babel-runtime/core-js/object/get-own-property-symbols");var _getOwnPropertySymbols2 = _interopRequireDefault(_getOwnPropertySymbols);var _hasInstance = require("babel-runtime/core-js/symbol/has-instance");var _hasInstance2 = _interopRequireDefault(_hasInstance);var _for = require("babel-runtime/core-js/symbol/for");var _for2 = _interopRequireDefault(_for);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
-var budge = require("budge");
 var doubt = require("doubt");
 var een = require("een");
 var enyof = require("enyof");
@@ -75,6 +74,7 @@ var fname = require("fname");
 var idntfy = require("idntfy");
 var leveld = require("leveld");
 var protype = require("protype");
+var shft = require("shft");
 var wauker = require("wauker");
 
 var CONDITION_PROCEDURE_PATTERN = /^[Ss]ymbol\([\-A-Za-z0-9]+\-instance\-condition\)$/;
@@ -173,7 +173,7 @@ var inhere = function inhere(blueprint, condition) {
 			}
 		});
 
-		condition = leveld(budge(arguments)).
+		condition = leveld(shft(arguments)).
 		filter(function (condition) {return protype(condition, FUNCTION);});
 
 		blueprint[INSTANCE_CONDITION](condition);
