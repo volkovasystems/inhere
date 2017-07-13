@@ -1,6 +1,6 @@
 {
   "name": "inhere",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Traceable inheritance.",
   "main": "inhere.js",
   "support": "inhere.support.js",
@@ -31,17 +31,16 @@
   "homepage": "https://github.com/volkovasystems/inhere#readme",
   "dependencies": {
     "babel-runtime": "^6.23.0",
-    "doubt": "^0.27.0",
-    "een": "^0.19.0",
-    "enyof": "^0.9.0",
-    "eqe": "^0.3.0",
+    "doubt": "^0.30.0",
+    "een": "^0.21.0",
+    "enyof": "^0.10.0",
+    "eqe": "^0.4.0",
     "falzy": "^0.20.0",
-    "fname": "^0.9.0",
-    "idntfy": "^0.3.0",
-    "leveld": "^0.5.0",
-    "protype": "^0.22.0",
-    "shft": "^0.2.0",
-    "wauker": "^0.16.0"
+    "fname": "^0.11.0",
+    "idntfy": "^0.4.0",
+    "leveld": "^0.7.0",
+    "shft": "^0.4.0",
+    "wauker": "^0.18.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -49,6 +48,6 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-latest": "^6.24.1",
     "source-map-loader": "^0.2.1",
-    "webpack": "^3.0.0"
+    "webpack": "^3.2.0"
   }
 }

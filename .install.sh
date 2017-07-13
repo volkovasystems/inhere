@@ -8,7 +8,6 @@ falzy \
 fname \
 idntfy \
 leveld \
-protype \
 shft \
 wauker \
 --save && \
@@ -29,7 +28,6 @@ falzy \
 fname \
 idntfy \
 leveld \
-protype \
 shft \
 wauker \
 --save \

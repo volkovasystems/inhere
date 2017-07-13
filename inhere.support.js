@@ -59,7 +59,6 @@
               			"fname": "fname",
               			"idntfy": "idntfy",
               			"leveld": "leveld",
-              			"protype": "protype",
               			"shft": "shft",
               			"wauker": "wauker"
               		}
@@ -74,7 +73,6 @@ var falzy = require("falzy");
 var fname = require("fname");
 var idntfy = require("idntfy");
 var leveld = require("leveld");
-var protype = require("protype");
 var shft = require("shft");
 var wauker = require("wauker");
 
@@ -97,7 +95,7 @@ var inhere = function inhere(blueprint, condition) {
                                                     	@end-meta-configuration
                                                     */
 
-	if (falzy(blueprint) || !protype(blueprint, FUNCTION)) {
+	if (falzy(blueprint) || typeof blueprint != "function") {
 		throw new Error("invalid blueprint");
 	}
 
@@ -119,7 +117,7 @@ var inhere = function inhere(blueprint, condition) {
                                         	@end-meta-configuration
                                         */
 
-							if (falzy(self) || !protype(self, FUNCTION)) {
+							if (falzy(self) || typeof self != "function") {
 								throw new Error("invalid self constructor");
 							}
 
@@ -142,7 +140,7 @@ var inhere = function inhere(blueprint, condition) {
 							return this[CONDITION];
 						}
 
-						if (protype(condition, FUNCTION) && !een(this[CONDITION], condition)) {
+						if (typeof condition == "function" && !een(this[CONDITION], condition)) {
 							this[CONDITION].push(condition);
 						}
 
@@ -161,7 +159,7 @@ var inhere = function inhere(blueprint, condition) {
 
 		}()).
 		filter(function (symbol) {
-			return protype(Delegate[symbol], FUNCTION) && (
+			return typeof Delegate[symbol] == "function" && (
 			enyof(symbol, DEFAULT_INSTANCE_CONDITION, HAS_INSTANCE, INSTANCE_CONDITION) ||
 			CONDITION_PROCEDURE_PATTERN.test(symbol.toString()));
 		}).
@@ -175,7 +173,7 @@ var inhere = function inhere(blueprint, condition) {
 		});
 
 		condition = leveld(shft(arguments)).
-		filter(function (condition) {return protype(condition, FUNCTION);});
+		filter(function (condition) {return typeof condition == "function";});
 
 		blueprint[INSTANCE_CONDITION](condition);
 
