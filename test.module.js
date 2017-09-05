@@ -67,27 +67,89 @@ const path = require( "path" );
 
 
 //: @server:
-
 describe( "inhere", ( ) => {
 
-} );
+	describe( "`inhere with class as blueprint`", ( ) => {
+		it( "should be instance of class", ( ) => {
+			class B { };
+			class A extends B{ };
 
+			inhere( B );
+
+			assert.equal( A instanceof B, true );
+
+			assert.equal( B instanceof B, true );
+
+			assert.equal( new A instanceof B, true );
+
+			assert.equal( new B instanceof B, true );
+
+			assert.equal( new B instanceof A, false );
+		} );
+	} );
+
+} );
 //: @end-server
 
 
 //: @client:
-
 describe( "inhere", ( ) => {
 
-} );
+	describe( "`inhere with class as blueprint`", ( ) => {
+		it( "should be instance of class", ( ) => {
+			class B { };
+			class A extends B{ };
 
+			inhere( B );
+
+			assert.equal( A instanceof B, true );
+
+			assert.equal( B instanceof B, true );
+
+			assert.equal( new A instanceof B, true );
+
+			assert.equal( new B instanceof B, true );
+
+			assert.equal( new B instanceof A, false );
+		} );
+	} );
+
+} );
 //: @end-client
 
 
 //: @bridge:
-
 describe( "inhere", ( ) => {
 
-} );
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
+	describe( "`inhere with class as blueprint`", ( ) => {
+		it( "should be instance of class", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					class B { };
+					class A extends B{ };
+
+					inhere( B );
+
+					let test = ( A instanceof B ) &&
+						( B instanceof B ) &&
+						( new A instanceof B ) &&
+						( new B instanceof B ) &&
+						( new B instanceof A == false );
+
+					return test;
+
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, true );
+		} );
+	} );
+
+} );
 //: @end-bridge

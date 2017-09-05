@@ -1,0 +1,84 @@
+{
+	"state": {
+		"passed": 1,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-09-05T06:17:04.732Z",
+	"end": "2017-09-05T06:17:43.364Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "inhere",
+			"duration": 0,
+			"start": "2017-09-05T06:17:43.079Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "inhere",
+			"duration": 107,
+			"start": "2017-09-05T06:17:43.080Z",
+			"end": "2017-09-05T06:17:43.187Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-09-05T06:17:43.081Z",
+					"end": "2017-09-05T06:17:43.081Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "inhere",
+					"associatedTest": "should be instance of class"
+				},
+				{
+					"start": "2017-09-05T06:17:43.186Z",
+					"end": "2017-09-05T06:17:43.187Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "inhere",
+					"associatedTest": "should be instance of class"
+				},
+				{
+					"start": "2017-09-05T06:17:43.187Z",
+					"end": "2017-09-05T06:17:43.187Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "inhere"
+				}
+			]
+		},
+		{
+			"name": "`inhere with class as blueprint`",
+			"duration": 107,
+			"start": "2017-09-05T06:17:43.080Z",
+			"end": "2017-09-05T06:17:43.187Z",
+			"tests": [
+				{
+					"name": "should be instance of class",
+					"start": "2017-09-05T06:17:43.081Z",
+					"end": "2017-09-05T06:17:43.186Z",
+					"duration": 105,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

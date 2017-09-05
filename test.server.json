@@ -1,16 +1,32 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-09-02T12:04:37.441Z",
-    "end": "2017-09-02T12:04:37.441Z",
-    "duration": 0
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 2,
+		"tests": 1,
+		"passes": 1,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-09-05T06:17:03.615Z",
+		"end": "2017-09-05T06:17:03.624Z",
+		"duration": 9
+	},
+	"tests": [
+		{
+			"title": "should be instance of class",
+			"fullTitle": "inhere `inhere with class as blueprint` should be instance of class",
+			"duration": 6,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be instance of class",
+			"fullTitle": "inhere `inhere with class as blueprint` should be instance of class",
+			"duration": 6,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }
